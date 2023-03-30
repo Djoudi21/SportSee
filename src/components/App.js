@@ -1,11 +1,12 @@
 import '../css/App.css';
-import Header from "./header/Header";
+import Layout from "./Layout";
+import Dashboard from "./dashboard/Dashboard";
 
 function App() {
   return (
-    <div className="">
-        <Header />
-    </div>
+      <Layout>
+        <Dashboard />
+      </Layout>
   );
 }
 
