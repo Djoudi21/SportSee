@@ -20,6 +20,7 @@ export default function Header() {
                     <li><Link to={'/'} className={styles.title}>COMMUNAUTe</Link></li>
                 </ul>
             </nav>
+            <p style={{color: 'red'}}>// TODO: handle1024px resolution style</p>
         </header>
     );
 }
