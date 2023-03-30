@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 91px;
+    background: #020203;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: end;
+}
+
+.navContainer {
+    align-items: center;
+    min-width: 1024px;
+    width: 1200px;
+}
+
+.navList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
