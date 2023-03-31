@@ -13,13 +13,10 @@ export default function ChartList() {
                 <IntensityChart />
                 <MilesChart />
                 <ScoreChart />
-                <NutrimentChart />
-            {/*<div className={styles.gridItem}>*/}
-            {/*    <ActivityChart />*/}
-            {/*</div>*/}
-            {/*<div className={styles.gridItem}>*/}
-            {/*    <ActivityChart />*/}
-            {/*</div>*/}
+                <NutrimentChart container={'totalNutrimentsContainer'} title={'1,930kCal'} subTitle={'Calories'} />
+                <NutrimentChart container={'proteinsNutrimentsContainer'} title={'155g'} subTitle={'Proteines'} />
+                <NutrimentChart container={'glucidesNutrimentsContainer'} title={'290g'} subTitle={'Glucides'} />
+                <NutrimentChart container={'lipidesNutrimentsContainer'} title={'50g'} subTitle={'Lipides'} />
         </div>
     );
 }

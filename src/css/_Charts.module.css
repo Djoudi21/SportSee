@@ -3,6 +3,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+    border: 2px solid red;
 }
 
 .grid-item {
@@ -13,7 +14,11 @@
 .activityContainer {
     border: 2px solid blue;
     height: 100px;
-    grid-area: 1/ 1/ 3/ 4;
+    /*grid-area: 1/ 1/ 3/ 4;*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .intensityContainer {
@@ -35,7 +40,101 @@
 }
 
 .totalNutrimentsContainer {
-    border: 2px solid grey;
-    height: 100px;
     grid-area: 1/ 4/ 2/ 5;
+    background: #FBFBFB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+    height: 124px;
+    width: 258px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.proteinsNutrimentsContainer {
+    grid-area: 2/ 4/ 3/ 5;
+    background: #FBFBFB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0212249);
+    height: 124px;
+    width: 258px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caloriesIcon {
+    background: #FF0000;
+    mix-blend-mode: normal;
+    opacity: 0.07;
+    border-radius: 6px;
+    height: 60px;
+    width: 60px;
+}
+
+.caloriesTitle {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #282D30;
+}
+
+.caloriesSubTitle {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #74798C;
+}
+
+
+.proteinsIcon {
+    background: #4AB8FF;
+    mix-blend-mode: normal;
+    opacity: 0.07;
+    border-radius: 6px;
+    height: 60px;
+    width: 60px;
+}
+
+.glucidesNutrimentsContainer {
+    grid-area: 3/ 4/ 4/ 5;
+    background: #FBFBFB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0212249);
+    height: 124px;
+    width: 258px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.glucidesIcon {
+    background: #F9CE23;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    border-radius: 6px;
+    height: 60px;
+    width: 60px;
+}
+
+.lipidesNutrimentsContainer {
+    grid-area: 4/ 4/ 5/ 5;
+    background: #FBFBFB;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0212249);
+    height: 124px;
+    width: 258px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lipidesIcon {
+    background: rgba(253, 81, 129);
+    mix-blend-mode: normal;
+    opacity: 0.07;
+    border-radius: 6px;
+    height: 60px;
+    width: 60px;
 }
