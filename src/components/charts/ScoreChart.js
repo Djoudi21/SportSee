@@ -11,7 +11,7 @@ export default function ScoreChart() {
     ];
 
     return (
-        <div className={styles.scoreContainer}>
+        <div className={`${styles.scoreContainer} ${styles.gridItem}`}>
             <ResponsiveContainer width="100%" height="100%">
                 <PieChart width={400} height={400}>
                     <Pie data={data01} dataKey="value" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
