@@ -1,4 +1,4 @@
-import styles from '../css/_Sidebar.module.css';
+import styles from '../../css/_Sidebar.module.css';
 
 export default function Copyright({screenSize, width, height}) {
     return (

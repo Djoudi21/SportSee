@@ -4,8 +4,8 @@ import ProteinsIcon from "../icons/ProteinsIcon";
 import LipidesIcon from "../icons/LipidesIcon";
 import TotalNutrimentsIcon from "../icons/TotalNutrimentsIcon";
 
-
 export default function NutrimentChart({container, title, subTitle}) {
+
     function renderIconStyle() {
         switch (container) {
             case 'proteinsNutrimentsContainer':
@@ -55,11 +55,9 @@ export default function NutrimentChart({container, title, subTitle}) {
 
     return (
         <div className={renderContainerStyle()}>
-            <div className={renderIconStyle()}>
                 {renderSvg()}
-            </div>
             <div>
-                <h3 className={styles.caloriesTitle}>{title}</h3>
+                <h3 className={styles.caloriesTitle}>{`${title}g`}</h3>
                 <h4 className={styles.caloriesSubTitle}>{subTitle}</h4>
             </div>
         </div>
